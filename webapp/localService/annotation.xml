@@ -105,44 +105,11 @@
 							<PropertyValue Property="Label" String="{@i18n&gt;customView}"/>
 						</Record>
 						<Record Type="UI.ReferenceFacet">
-							<PropertyValue Property="ID" String="header"/>
-							<PropertyValue Property="Label" String="{@i18n&gt;header}"/>
-							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#header"/> 
-						</Record>
-						<Record Type="UI.ReferenceFacet">
 							<PropertyValue Property="ID" String="files"/>
 							<PropertyValue Property="Label" String="{@i18n&gt;table}"/>
 							<PropertyValue Property="Target" AnnotationPath="to_Files/@UI.LineItem"/> 
 						</Record>
-						<Record Type="UI.CollectionFacet">
-							<PropertyValue Property="ID" String="technical"/>
-							<PropertyValue Property="Label" String="{@i18n&gt;technical}"/>
-							<PropertyValue Property="Facets">
-								<Collection>
-									<Record Type="UI.ReferenceFacet">
-										<PropertyValue Property="ID" String="main"/>
-										<PropertyValue Property="Label" String="{@i18n&gt;from TechType}"/>
-										<PropertyValue Property="Target" AnnotationPath="to_TechAttribute/@UI.FieldGroup#techData"/> 
-									</Record>
-								</Collection>
-							</PropertyValue>
-							<Annotation Term="UI.Hidden" Path="to_Settings/HideDivDoc"/>
-						</Record>
 					</Collection>
-				</Annotation>
-				<Annotation Term="UI.FieldGroup" Qualifier="header">
-					 <Record Type="FieldGroupType">
-						<PropertyValue Property="Data">
-							<Collection>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="Decimal"/>
-								</Record>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="DecimalScale"/>
-								</Record>
-							</Collection>
-						</PropertyValue>
-					</Record>
 				</Annotation>
 				<Annotation Term="UI.Identification">
 					<Collection>
@@ -152,40 +119,6 @@
 							<PropertyValue Property="Determining" Bool="true"/>
 						</Record>
 					</Collection>
-				</Annotation>
-			</Annotations>
-			<Annotations Target="Metadata.TechType">
-				<Annotation Term="UI.FieldGroup" Qualifier="techData">
-					 <Record Type="FieldGroupType">
-						<PropertyValue Property="Data">
-							<Collection>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="Status"/>
-								</Record>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="HasApprove"/>
-								</Record>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="HasChange"/>
-								</Record>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="HasReplace"/>
-								</Record>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="HideFile"/>
-								</Record>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="UploadHidden"/>
-								</Record>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="FileDeleteVisible"/>
-								</Record>
-								<Record Type="UI.DataField">
-									<PropertyValue Property="Value" Path="Field_fc"/>
-								</Record>
-							</Collection>
-						</PropertyValue>
-					</Record>
 				</Annotation>
 			</Annotations>
 
@@ -210,11 +143,6 @@
                     </Record>
                 </Annotation>
             </Annotations>
-
-			<Annotations Target="Metadata.HeaderType/Decimal">
-				<Annotation Term="Measures.Scale" Path="DecimalScale"/>
-				<Annotation Term="Measures.Unit" Path="Unit"/>
-			</Annotations>
 
 			<Annotations Target="Metadata.FileType">
 				<Annotation Term="UI.LineItem">
