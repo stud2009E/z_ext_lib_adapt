@@ -1,0 +1,72 @@
+[
+	{
+		"RowId": "01",
+		"FileId": "001",
+		"FileName": "File_1.pdf",
+		"UserName": "Admin",
+		"FileSize": "100Kb",
+		"MimeType": "application/pdf",
+		"Date": "/Date(1598838725000)/",
+		"Time": "PT23H59M59S"
+	},
+	{
+		"RowId": "01",
+		"FileId": "002",
+		"FileName": "File_2.ppt",
+		"UserName": "User",
+		"FileSize": "1M",
+		"MimeType": "application/vnd.ms-powerpoint",
+		"Date": "/Date(1598838725000)/",
+		"Time": "PT22H49M32S"
+	},
+	{
+		"RowId": "01",
+		"FileId": "003",
+		"FileName": "File_3.png",
+		"UserName": "Vendor",
+		"FileSize": "100Kb",
+		"MimeType": "image/png",
+		"Date": "/Date(1598838725000)/",
+		"Time": "PT23H59M59S"
+	},
+	{
+		"RowId": "01",
+		"FileId": "004",
+		"FileName": "File_4.xls",
+		"UserName": "Guest",
+		"FileSize": "100Kb",
+		"MimeType": "application/vnd.ms-excel",
+		"Date": "/Date(1598838725000)/",
+		"Time": "PT22H49M32S"
+	},
+	{
+		"RowId": "02",
+		"FileId": "005",
+		"FileName": "File_SuperUser.txt",
+		"UserName": "SuperUser",
+		"FileSize": "1M",
+		"MimeType": "text/plain",
+		"Date": "/Date(1598838725000)/",
+		"Time": "PT23H59M59S"
+	},
+	{
+		"RowId": "02",
+		"FileId": "006",
+		"FileName": "File_Vendor.zip",
+		"UserName": "Vendor",
+		"FileSize": "100Kb",
+		"MimeType": "application/zip",
+		"Date": "/Date(1598838725000)/",
+		"Time": "PT22H49M32S"
+	},
+	{
+		"RowId": "02",
+		"FileId": "007",
+		"FileName": "File_Basis.doc",
+		"UserName": "Basis",
+		"FileSize": "100Kb",
+		"MimeType": "application/msword",
+		"Date": "/Date(1598838725000)/",
+		"Time": "PT23H59M33S"
+	}
+]

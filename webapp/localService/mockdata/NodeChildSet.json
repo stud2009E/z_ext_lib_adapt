@@ -1,0 +1,22 @@
+[
+    {
+        "NodeId": "0",
+        "ChildId": "1"
+    },
+    {
+        "NodeId": "0",
+        "ChildId": "2"
+    },
+    {
+        "NodeId": "1",
+        "ChildId": "3"
+    },
+    {
+        "NodeId": "2",
+        "ChildId": "3"
+    },
+    {
+        "NodeId": "3",
+        "ChildId": null
+    }
+]

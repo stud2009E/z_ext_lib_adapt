@@ -1,0 +1,21 @@
+[
+    {   
+        "RowId": "02",
+        "LaneId": "0",
+        "Icon": "sap-icon://order-status",
+        "Label": "Order Processing",
+        "Position": 0
+    }, {
+        "RowId": "02",
+        "LaneId": "1",
+        "Icon": "sap-icon://monitor-payments",
+        "Label": "Delivery Processing",
+        "Position": 1
+    }, {
+        "RowId": "02",
+        "LaneId": "2",
+        "Icon": "sap-icon://payment-approval",
+        "Label": "Invoicing",
+        "Position": 2
+    }
+]

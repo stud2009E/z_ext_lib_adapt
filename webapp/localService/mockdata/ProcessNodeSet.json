@@ -1,0 +1,48 @@
+[
+    {   
+        "RowId": "02",
+        "NodeId": "0",
+        "Lane": "0",
+        "Title": "Sales Order 1",
+        "TitleAbbreviation": "SO 1",
+        "children": [ 1, 2 ],
+        "State": "Positive",
+        "StateText": "OK status",
+        "Focused": false,
+        "Highlighted": false,
+        "Texts": [ "Sales Order Document Overdue long text for the wrap up all the aspects", "Not cleared" ]
+    }, {
+        "RowId": "02",
+        "NodeId": "1",
+        "Lane": "1",
+        "Title": "Outbound Delivery 40",
+        "TitleAbbreviation": "OD 40",
+        "State": "Planned",
+        "StateText": "NOT OK",
+        "Focused": false,
+        "Highlighted": true,
+        "Texts": [ "text 1", "text 2" ]
+    }, {
+        "RowId": "02",
+        "NodeId": "2",
+        "Lane": "1",
+        "Title": "Outbound Delivery 40",
+        "TitleAbbreviation": "OD 40",
+        "State": "Planned",
+        "StateText": "NOT OK",
+        "Focused": false,
+        "Highlighted": true,
+        "Texts": [ "text 1", "text 2" ]
+    }, {
+        "RowId": "02",
+        "NodeId": "3",
+        "Lane": "2",
+        "Title": "Outbound Delivery 45",
+        "TitleAbbreviation": "OD 45",
+        "State": "Neutral",
+        "StateText": null,
+        "Focused": false,
+        "Highlighted": false,
+        "Texts": null
+    }
+]

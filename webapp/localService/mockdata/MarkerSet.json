@@ -1,0 +1,23 @@
+[
+	{
+		"FileId": "005",
+		"MarkerId": "001",
+		"AdditionalInfo": "Attention",
+		"Type": "Favorite",
+		"Visibility": "IconOnly"
+	},
+	{
+		"FileId": "005",
+		"MarkerId": "002",
+		"AdditionalInfo": "Important",
+		"Type": "Flagged",
+		"Visibility": "IconOnly"
+	},
+	{
+		"FileId": "007",
+		"MarkerId": "003",
+		"AdditionalInfo": "Checked",
+		"Type": "Flagged",
+		"Visibility": "IconOnly"
+	}
+]

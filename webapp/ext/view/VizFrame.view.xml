@@ -1,0 +1,71 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:m="sap.m"
+	xmlns="sap.viz.ui5.controls"
+	xmlns:d="sap.viz.ui5.data"
+	xmlns:f="sap.viz.ui5.controls.common.feeds"
+	xmlns:custom="z.ext.lib.adapt.custom"
+	controllerName="z.ext.lib.adapt.ext.controller.VizFrame">	
+
+	<VizFrame id="vizFrame"
+		vizType="{local>type}"
+		vizProperties="{
+			plotArea: {
+				drawingEffect: 'normal',
+				colorPalette: [ '#F48323', '#EB271B', '#D9B5CA', '#AED1DA', '#DFECB2', '#FCDAB0', '#F5BCB4'],
+				background: {
+					visible: false
+				}
+			}
+		}">
+		<dataset>
+			<d:FlattenedDataset data="{local>vizData}">
+				<d:dimensions>
+					<d:DimensionDefinition name="date" value="{local>month}"/>
+				</d:dimensions>
+				
+				<d:measures>
+					<d:MeasureDefinition name="max" value="{local>max}"/>
+					<d:MeasureDefinition name="min" value="{local>min}"/>
+					<d:MeasureDefinition name="avg" value="{local>avg}"/>
+					<d:MeasureDefinition name="agg" value="{local>agg}"/>
+
+					<d:MeasureDefinition name="color" value="{local>color}"/>
+				</d:measures>
+			</d:FlattenedDataset>
+		</dataset>
+
+		<feeds>
+			<f:FeedItem uid="valueAxis" type="Measure" values="max,min"/>
+			<f:FeedItem uid="categoryAxis" type="Dimension" values="date"/>
+		</feeds>
+	</VizFrame>
+
+	<m:HBox>
+		<custom:Chart width="500px"
+			height="300px"
+			title="Line"
+			type="line"
+			items="{local>chartData}">
+			<custom:items>
+				<custom:ChartItem label="{local>label}"
+					data="{local>data}"
+					backgroundColor="{local>backgroundColor}"
+					borderColor="{local>borderColor}"/>
+			</custom:items>
+		</custom:Chart>
+
+		<custom:Chart width="500px"
+			height="300px"
+			title="Bar"
+			type="bar"
+			press="onChartPress"
+			items="{local>chartData}">
+			<custom:items>
+				<custom:ChartItem label="{local>label}"
+					data="{local>data}"
+					backgroundColor="{local>backgroundColor}"
+					borderColor="{local>borderColor}"/>
+			</custom:items>
+		</custom:Chart>
+	</m:HBox>
+</core:View>

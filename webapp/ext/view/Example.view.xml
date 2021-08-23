@@ -1,0 +1,67 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns:m="sap.m"
+	xmlns="sap.suite.ui.commons"
+	xmlns:smi="sap.ui.comp.smartmultiinput"
+	xmlns:smf="sap.ui.comp.smartfield"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+	controllerName="z.ext.lib.adapt.ext.controller.Example">
+	
+   <html:style>
+		.movedOut {
+			position: absolute;
+			left: -1000px;
+		}
+   </html:style>
+
+
+	<m:VBox id="hiddenBox"
+		class="movedOut"/>
+	
+	<smf:Smartfield value="{Date}"/>
+
+	<m:Button text="Test"
+		press="onTestPress"
+		class="sapUiSmallMargin"
+	/>
+
+	<ProcessFlow
+		wheelZoomable="false"
+		id="processflow1"
+		scrollable="false"
+		foldedCorners="true"
+		nodePress="onNodePress"
+		nodes="{
+			path: 'to_Nodes',
+			parameters: {
+				expand: 'to_Children'
+			}
+		}"
+		lanes="{to_Lanes}">
+		<nodes>
+			<ProcessFlowNode
+				laneId="{Lane}"
+				nodeId="{NodeId}"
+				title="{Title}"
+				titleAbbreviation="{TitleAbbreviation}"
+				children="{
+					path: 'to_Children',
+					formatter: '.formatChidrenId'
+				}"
+				state="{State}"
+				stateText="{StateText}"
+				texts="{Texts}"
+				highlighted="{Highlighted}"
+				focused="{Focused}"/>
+		</nodes>
+		<lanes>
+			<ProcessFlowLaneHeader
+				laneId="{LaneId}"
+				iconSrc="{Icon}"
+				text="{Label}"
+				press="onLaneHeaderPress"
+				position="{Position}" />
+		</lanes>
+	</ProcessFlow>
+
+</core:View>
